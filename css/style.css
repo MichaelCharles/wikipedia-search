@@ -1,0 +1,143 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background: #e2e2e2;
+  font-family: "Noto Sans Japanese", "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.card, .result-card {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms;
+}
+
+.card:hover, .result-card:hover {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+}
+
+.search-wrapper {
+  max-width: 500px;
+  margin: 2em auto 2em;
+}
+
+.search-box {
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.query {
+  width: 100%;
+  border: 0px;
+  outline: none;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.query-box {
+  width: 100%;
+}
+
+.search-button-box {
+  width: 80px;
+  height: 40px;
+  margin-right: 12px;
+  display: flex;
+}
+
+.random-button,
+.search-button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  background: white;
+  border: 0;
+  outline: none;
+  color: #727272;
+  transition: color 500ms;
+}
+
+.random-button:hover,
+.search-button:hover {
+  color: #212121;
+}
+
+.tt-search, .tt-random {
+  background: #212121;
+  color: #f2f2f2;
+  width: auto;
+  position: absolute;
+  border-radius: 4px;
+  font-size: 0.75em;
+  padding: 0.5em;
+  display: none;
+  z-index: 9000;
+}
+
+.results {
+  display: block;
+  position: relative;
+}
+
+.results a {
+  color: #212121;
+  text-decoration: none;
+}
+
+.result-card {
+  max-width: 500px;
+  margin: 6px;
+  min-height: 150px;
+  padding: 19px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 532px) {
+  .results {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .result-card {
+    position: relative;
+    width: 200px;
+    margin: 6px;
+    float: left;
+    padding: 0 19px 0 19px;
+    z-index: -2;
+  }
+}
+@media screen and (min-width: 800px) {
+  .results {
+    max-width: 750px;
+  }
+}
+.ui-menu {
+  border: 0;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  z-index: -1;
+  font-family: "Noto Sans Japanese", "Roboto", sans-serif;
+  font-size: 13px;
+  padding-top: 6px;
+}
+
+.ui-menu-item {
+  margin-top: 6px;
+}
+
+.ui-menu .ui-state-focus,
+.ui-menu .ui-state-active {
+  border: 0;
+  background: #f7f7f7;
+  margin: 0;
+}

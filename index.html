@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Search Wikipedia</title>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	
+<!-- for Google -->
+<meta name="description" content="An interface for searching for Wikipedia articles." />
+<meta name="keywords" content="JavaScript,FreeCodeCamp,API,wikipedia" />
+<meta name="application-name" content="Search Wikipedia" />
+
+<!-- for Facebook -->          
+<meta property="og:title" content="Search Wikipedia" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="images/share.jpg" />
+<meta property="og:description" content="An interface for searching for Wikipedia articles." />
+
+<!-- for Twitter -->          
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Search Wikipedia" />
+<meta name="twitter:description" content="An interface for searching for Wikipedia articles." />
+<meta name="twitter:image" content="images/share.jpg" />
+	
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+  <div class="search-wrapper">
+    <div class="search-box card">
+      <div class="query-box">
+        <input type="text" class="query" placeholder="Search Wikipedia for an article...">
+      </div>
+      <div class="search-button-box">
+        <a href="https://en.wikipedia.org/wiki/Special:Random">
+          <button class="random-button" name="random">
+            <i class="fa fa-random"></i>
+          </button>
+        </a>
+        <button class="search-button" name="search">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tt-random">
+    Random article.
+  </div>
+  <div class="tt-search">
+    Search for an article.
+  </div>
+
+  <div class="results">
+    <!-- Results will be generated here -->
+  </div>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
