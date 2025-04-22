@@ -1,6 +1,6 @@
 # Wikipedia Search Tool project for FreeCodeCamp
 
-[See it live on GitHub pages.](https://mca62511.github.io/wikipedia-search)
+[See it live on GitHub pages.](https://michaelcharles.github.io/wikipedia-search)
 
 A Pen created at CodePen.io. You can find this one at http://codepen.io/mca62511/pen/bpbQeB.
 
